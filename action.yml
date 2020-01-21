@@ -27,6 +27,7 @@ runs:
     - ${{ inputs.image-name }}
     - ${{ inputs.image-tag }}
     - ${{ inputs.extract-git-tag }}
+    - ${{ inputs.dockerfile-path }}
 branding:
   icon: 'box'
   color: 'blue'
