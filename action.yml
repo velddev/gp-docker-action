@@ -15,6 +15,10 @@ inputs:
     description: 'Extract git-tag from repository'
     default: "false"
     required: false
+  dockerfile-path:
+    description: 'Path to the directory where the Dockerfile resides'
+    default: "."
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
