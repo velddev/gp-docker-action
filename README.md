@@ -67,6 +67,6 @@
         uses: velddev/gp-docker-action@v0.3
         with: 
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          image-name: my-cool-service
+          image-name: my-cool-service-backend
           docker-file: src/service-backend/Dockerfile
 ```
