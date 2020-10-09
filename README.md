@@ -54,3 +54,19 @@
         image-name: my-cool-service # Provide only Docker image name
         extract-git-tag: true # Provide flag to extract Docker image tag from git reference
 ```
+
+### Build a specific Docker Image with a specific file inside of the context.
+
+```yaml 
+  build-specific-dockerfile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build specific Dockerfile
+        uses: velddev/gp-docker-action@v0.3
+        with: 
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          image-name: my-cool-service-backend
+          docker-file: src/service-backend/Dockerfile
+```
